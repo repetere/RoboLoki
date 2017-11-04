@@ -1,2 +1,2 @@
 # RoboLoki
-Database Management Studio for Loki (Native App)
+Lowkie GUI

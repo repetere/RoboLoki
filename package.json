@@ -1,0 +1,69 @@
+{
+  "name": "roboloki",
+  "productName": "RoboLoki",
+  "version": "1.0.3",
+  "description": "LokiJS Database Management Studio",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/typesettin/RoboLoki.git"
+  },
+  "author": "Yaw Etse <yaw.etse@gmail.com>",
+  "homepage": "https://github.com/typesettin/RoboLoki#readme",
+  "keywords": [
+    "Loki",
+    "lowkie",
+    "orm",
+    "DBA"
+  ],
+  "main": "app.js",
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "start_dev": "electron app.js",
+    "start": "npm install && electron app.js",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^1.4.12",
+    "electron-builder": "^19.43.4",
+    "jquery": "^3.2.1"
+  },
+  "build": {
+    "appId": "roboloki",
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "squirrel",
+      "icon": "build/icon.ico"
+    }
+  },
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "fs-extra": "^4.0.2",
+    "periodicjs": "^10.6.83",
+    "periodicjs.ext.dynamic_core_data": "^1.0.5",
+    "periodicjs.ext.oauth2server": "^10.5.2",
+    "periodicjs.ext.passport": "^6.0.0",
+    "periodicjs.ext.reactapp": "^10.8.69",
+    "periodicjs.ext.user_access_control": "^10.0.2"
+  }
+}
