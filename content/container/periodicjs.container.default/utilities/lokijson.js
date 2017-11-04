@@ -68,10 +68,10 @@ function createDynamicDbs(options) {
       createModelDocs({ db: newdb, models: newdb.status.collections || [], })
         .then(createdModels => {
           const newdoc = getCoreDataDB({ db: newdb, models: createdModels, });
-          console.log('going to create', { newdoc, });
+          // console.log('going to create', { newdoc, });
           return dynamicCoredataDatabases.create({ newdoc, });
         })
-        .then(createdDB => {
+        // .then(createdDB => {
           console.log({ createdDB, });
           return dynamicDBLocals.connect.connectDynamicDatabases();
         })
