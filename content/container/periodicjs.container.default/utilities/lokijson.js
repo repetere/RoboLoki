@@ -71,8 +71,8 @@ function createDynamicDbs(options) {
           // console.log('going to create', { newdoc, });
           return dynamicCoredataDatabases.create({ newdoc, });
         })
-        // .then(createdDB => {
-          console.log({ createdDB, });
+        .then(createdDB => {
+          // console.log({ createdDB, });
           return dynamicDBLocals.connect.connectDynamicDatabases();
         })
         .then(() => {
