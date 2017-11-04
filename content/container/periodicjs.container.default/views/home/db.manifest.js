@@ -72,7 +72,7 @@ module.exports = {
               },
               'filterSearch': true,
               'tableSearch': true,
-              flattenRowData: true,
+              flattenRowData: false,
               flattenRowDataOptions: { maxDepth: 3, },
               headers: [
                 {

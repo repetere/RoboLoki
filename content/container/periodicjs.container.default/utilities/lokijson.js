@@ -131,8 +131,8 @@ function getCoreModel(options) {
         // field_ref: String,
       },
     ],
-    // scheme_options: Schema.Types.Mixed,
-    // scheme_associations: Schema.Types.Mixed,
+    scheme_options: '{}',
+    scheme_associations: '{}',
     scheme_core_data_options: {
       sort: '{ createdat: -1, }',
       docid: '["_id"]',

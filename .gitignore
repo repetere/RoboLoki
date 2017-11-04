@@ -61,6 +61,8 @@ typings/
 # dotenv environment variables file
 .env
 
+public/uploads/*
+
 content/data/db/*
 content/data/dynamicdb/*
 content/data/dynamicdb
