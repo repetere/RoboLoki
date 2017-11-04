@@ -62,3 +62,4 @@ typings/
 .env
 
 content/data/db/*
+content/data/dynamicdb/*
